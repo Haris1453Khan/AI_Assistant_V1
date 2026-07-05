@@ -74,3 +74,47 @@ To ensure the assistant performs reliably under real-world conditions, the appli
 Below is the verified test run matching the protocol criteria above:
 
 ![System Proof of Concept](./image.png)
+
+---
+
+## 🚀 Installation & Execution Guide
+
+Follow these sequential steps to clone the repository, configure the isolated environment, install required dependencies, and launch the asynchronous application.
+
+### 1. Clone the Repository
+Clone the repository from GitHub and navigate into the root directory:
+```bash
+git clone [https://github.com/YOUR_GITHUB_USERNAME/AI_assistant_V1.git](https://github.com/YOUR_GITHUB_USERNAME/AI_assistant_V1.git)
+cd AI_assistant_V1
+```
+
+### 2. Set Up a Virtual Environment
+On Windows (Git Bash / Command Prompt)
+```bash
+python -m venv venv
+source venv/Scripts/activate
+```
+On Linux/macOS
+```bash
+python -m venv venv
+source venv/bin/activate
+```
+
+### 3. Install Project Dependencies
+Ensure your `venv` is active, then install all verified packages directly from the `requirements.txt` manifest:
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Configure Environment Secrets
+Create a `.env` file in the project's root directory to hold your credentials safely:
+```bash
+DEEP_SEEK_API_KEY=your_private_api_key_here
+```
+(Note: The system's `.gitignore` rules ensure this file will never be exposed to public commits).
+
+### 5. Launch the Application Entry Point
+Execute the root `main.py` script to initiate the asynchronous conversation loop handler:
+```bash
+python main.py
+```
